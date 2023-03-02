@@ -8,19 +8,19 @@ local rofi_command = 'env /usr/bin/rofi -dpi ' .. get_dpi() .. ' -width ' .. wit
 return {
   -- List of apps to start by default on some actions
   default = {
-    terminal = 'terminator',
+    terminal = 'alacritty',
     rofi = rofi_command,
     lock = 'i3lock-fancy',
-    quake = 'terminator',
+    quake = 'alacritty',
     screenshot = 'flameshot screen -p ~/Pictures',
     region_screenshot = 'flameshot gui -p ~/Pictures',
     delayed_screenshot = 'flameshot screen -p ~/Pictures -d 5000',
-    browser = 'brave',
-    editor = 'gedit', -- gui text editor
+    browser = 'google-chrome',
+    editor = 'code', -- gui text editor
     social = 'discord',
     game = rofi_command,
     files = 'nautilus',
-    music = rofi_command 
+    music = 'spotify'
   },
   -- List of apps to start once on start-up
   run_on_start_up = {
@@ -31,11 +31,10 @@ return {
     'numlockx on', -- enable numlock
     '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
     'xfce4-power-manager', -- Power manager
-     'flameshot',
-     'synology-drive -minimized',
-     'steam -silent',
-    'feh --randomize --bg-fill ~/.wallpapers/*',
-    '/usr/bin/variety',
+    'flameshot',
+    'synology-drive -minimized',
+    'feh --bg-fill ~/wallpapers/*',
+    -- '/usr/bin/variety',
     -- Add applications that need to be killed between reloads
     -- to avoid multipled instances, inside the awspawn script
     '~/.config/awesome/configuration/awspawn' -- Spawn "dirty" apps that can linger between sessions
