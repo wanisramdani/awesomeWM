@@ -5,13 +5,6 @@ Note: This fork focuses on streamlining the config and adding some Quality of Li
 
 An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) following the [Material Design guidelines](https://material.io) with a performant opiniated mouse/keyboard workflow to increase daily productivity and comfort.
 
-[![](./theme/titus-theme/demo.png)](https://www.reddit.com/r/unixporn/comments/anp51q/awesome_material_awesome_workflow/)
-*[Click to view in high quality](https://www.reddit.com/r/unixporn/comments/anp51q/awesome_material_awesome_workflow/)*
-
-| Fullscreen   | Rofi Combo Panel | Exit screen   |
-|:-------------:|:-------------:|:-------------:|
-|![](./theme/titus-theme/fullscreen.png)|![](./theme/titus-theme/panel.png)|![](https://i.imgur.com/rcKOLYQ.png)|
-
 ## Installation
 
 ### 1) Get all the dependencies
@@ -51,12 +44,12 @@ yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-the
 
 Arch-Based Installs
 ```
-git clone https://github.com/ChrisTitusTech/titus-awesome ~/.config/awesome
+git clone https://github.com/wanisramdani/awesomeWM ~/.config/awesome
 ```
 
 Debian-Based Installs
 ```
-git clone --branch debian https://github.com/ChrisTitusTech/titus-awesome ~/.config/awesome
+git clone --branch debian https://github.com/wanisramdani/awesomeWM ~/.config/awesome
 ```
 
 ### 3) Set the themes

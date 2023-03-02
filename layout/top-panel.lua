@@ -110,23 +110,26 @@ local TopPanel = function(s)
       }
     }
     )
-
+   
     panel:struts(
       {
         top = dpi(32)
       }
     )
-
+    -- panel layout
     panel:setup {
       layout = wibox.layout.align.horizontal,
+      -- left side
       {
         layout = wibox.layout.fixed.horizontal,
         -- Create a taglist widget
         TagList(s),
         TaskList(s),
-        add_button
+        add_button,
       },
+      -- middle
       nil,
+      -- right side
       {
         layout = wibox.layout.fixed.horizontal,
         wibox.container.margin(systray, dpi(3), dpi(3), dpi(6), dpi(3)),

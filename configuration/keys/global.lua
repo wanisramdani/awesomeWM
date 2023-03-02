@@ -12,8 +12,8 @@ local globalKeys =
   -- Hotkeys
   awful.key({modkey}, 'F1', hotkeys_popup.show_help, {description = 'Show help', group = 'awesome'}),
   -- Tag browsing
-  awful.key({modkey}, 'w', awful.tag.viewprev, {description = 'view previous', group = 'tag'}),
-  awful.key({modkey}, 's', awful.tag.viewnext, {description = 'view next', group = 'tag'}),
+  awful.key({modkey}, 's', awful.tag.viewprev, {description = 'view previous', group = 'tag'}),
+  awful.key({modkey}, 'z', awful.tag.viewnext, {description = 'view next', group = 'tag'}),
   awful.key({altkey, 'Control'}, 'Up', awful.tag.viewprev, {description = 'view previous', group = 'tag'}),
   awful.key({altkey, 'Control'}, 'Down', awful.tag.viewnext, {description = 'view next', group = 'tag'}),
   awful.key({modkey}, 'Escape', awful.tag.history.restore, {description = 'go back', group = 'tag'}),
@@ -38,7 +38,8 @@ local globalKeys =
     {modkey},
     'r',
     function()
-      awful.spawn('rofi -combi-modi window,drun -show combi -modi combi')
+      --awful.spawn('rofi -combi-modi window,drun -show combi -modi combi')
+      awful.spawn('rofi -show drun -theme /home/repu/.config/rofi/launchers/type-1/style-5.rasi')
     end,
     {description = 'Main menu', group = 'awesome'}
   ),
@@ -255,7 +256,7 @@ local globalKeys =
   -- Dropdown application
   awful.key(
     {modkey},
-    'z',
+    'w',
     function()
       _G.toggle_quake()
     end,
