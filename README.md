@@ -20,7 +20,26 @@ wget -qO- https://git.io/papirus-icon-theme-install | sh
 
 ```
 yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-theme lxappearance flameshot pnmixer network-manager-applet xfce4-power-manager qt5-styleplugins papirus-icon-theme -y
+
 ```
+
+install more apps 
+
+
+
+```
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb | sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+sudo apt install variety feh
+
+sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3 git neovim python3-neovim
+
+curl -sS https://starship.rs/install.sh | sh
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+
+sudo apt-get install git python3  neovim python3-neovim
+```
+
 
 #### Program list
 
@@ -39,6 +58,9 @@ yay -S awesome rofi picom i3lock-fancy xclip ttf-roboto polkit-gnome materia-the
 - [pnmixer](https://github.com/nicklan/pnmixer) Audio Tray icon that is in debian repositories and is easily installed on arch through AUR.
 - [network-manager-applet](https://gitlab.gnome.org/GNOME/network-manager-applet) nm-applet is a Network Manager Tray display from GNOME.
 - [xfce4-power-manager](https://docs.xfce.org/xfce/xfce4-power-manager/start) XFCE4's power manager is excellent and a great way of dealing with sleep, monitor timeout, and other power management features.
+
+
+
 
 ### 2) Clone the configuration
 

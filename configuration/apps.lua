@@ -13,7 +13,7 @@ return {
     lock = 'i3lock-fancy',
     quake = 'alacritty',
     screenshot = 'flameshot screen -p ~/Pictures',
-    region_screenshot = 'flameshot gui -p ~/Pictures',
+    region_screenshot = 'flameshot gui -c -p ~/Pictures/flameshot',
     delayed_screenshot = 'flameshot screen -p ~/Pictures -d 5000',
     browser = 'google-chrome',
     editor = 'code', -- gui text editor
