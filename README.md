@@ -28,14 +28,17 @@ install more apps
 
 
 ```
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb | sudo dpkg -i google-chrome-stable_current_amd64.deb
-
-sudo apt install variety feh
 
 sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3 git neovim python3-neovim
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb | sudo dpkg -i google-chrome-stable_current_amd64.deb
 
+sudo apt install cargo variety feh
+cargo install alacritty
+
+
+-sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 curl -sS https://starship.rs/install.sh | sh
-sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+
 
 sudo apt-get install git python3  neovim python3-neovim
 ```
