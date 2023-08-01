@@ -15,9 +15,8 @@ require('layout')
 require('module.notifications')
 require('module.auto-start')
 require('module.decorate-client')
--- Backdrop causes bugs on some gtk3 applications
--- you may wanna comment backdrop
-require('module.backdrop')
+-- Backdrop causes bugs on some gtk3 applications e.g. JetBrain IDEs
+-- require('module.backdrop')
 require('module.exit-screen')
 require('module.quake-terminal')
 
